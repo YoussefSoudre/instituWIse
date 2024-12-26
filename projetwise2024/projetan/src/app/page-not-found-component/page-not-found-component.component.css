@@ -1,0 +1,104 @@
+/* Conteneur principal */
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: none;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Message d'erreur */
+.error-message {
+    text-align: center;
+    background-color:white;
+    color: #070606;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    animation: scaleUp 0.5s ease-out;
+}
+
+/* Titre principal de l'erreur */
+.error-title {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    animation: bounceIn 1s ease-in-out;
+}
+
+/* Sous-titre de l'erreur */
+.error-subtitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Description supplémentaire */
+.error-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeInUp 2s ease-in-out forwards;
+}
+
+/* Lien vers la page d'accueil */
+.back-home {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-home:hover {
+    background-color: #444;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: translateY(-1000px);
+    }
+    60% {
+        transform: translateY(30px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

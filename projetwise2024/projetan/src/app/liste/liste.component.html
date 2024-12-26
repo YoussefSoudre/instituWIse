@@ -1,0 +1,55 @@
+<!--Contenue de la page liste-->
+  <!--Contenu-->
+  <div class="container">
+    <div id="alertMsg">
+<p>
+  {{message}}
+</p>
+    </div>
+
+ 
+<div id="home">
+
+  <app-article
+  *ngFor="let element of liste"
+   [titreArticle]="element.titreArticle"
+   [prixArticle]="element.prixArticle"
+   [description]="element.description"
+   [urlImag]="element.urlImag"
+  [dispo]=""
+  [textAltImg]="element.textAltImg"
+  [dispo]="element.dispo"
+  (info)="onAffiche($event)">
+  </app-article>
+<!--
+  <app-article
+   [titreArticle]="'Panier1'"
+   [prixArticle]="800"
+   [description]="'Le super Panier1'"
+   [urlImag]="'../assets/images/image2.jpg'"
+  [dispo]="false"
+  [textAltImg]="'type1'"
+  (info)="onAffiche($event)">
+  </app-article>
+  <app-article
+   [titreArticle]="'panier2'" 
+   [prixArticle]="710"
+   [description]="'Le super Panier2'"
+   [urlImag]="'../assets/images/image1.jpg'"
+  [dispo]="false"
+  [textAltImg]="'type2'"
+  (info)="onAffiche($event)">
+</app-article>
+  <app-article
+   [titreArticle]="'panier3'" 
+   [prixArticle]="1000"
+   [description]="'Le super Panier2'"
+   [urlImag]="'../assets/images/image3.jpg'"
+  [textAltImg]="'type3'"
+   (info)="onAffiche($event)">
+  </app-article>
+-->
+</div>
+
+</div>
+

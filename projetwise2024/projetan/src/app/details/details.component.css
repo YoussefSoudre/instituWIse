@@ -1,0 +1,64 @@
+/* Animation pour le conteneur */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Image */
+.container img {
+    width: 100%; /* Remplit tout le conteneur */
+    height: auto; /* Garde les proportions */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container img:hover {
+    transform: scale(1.05); /* Zoom léger */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Titre */
+.container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+    animation: fadeIn 1.2s ease forwards;
+}
+
+/* Prix */
+.container h3 {
+    font-size: 20px;
+    color: #e63946;
+    margin: 10px 0;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+/* Description */
+.container p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin: 10px 0;
+    animation: fadeIn 1.8s ease forwards;
+}
+
+/* Animation pour les éléments */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

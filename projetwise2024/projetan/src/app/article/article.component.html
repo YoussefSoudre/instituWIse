@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col s12 m7">
+    <div class="card">
+      <div class="card-image">
+        <img [src]="urlImag" [alt]="textAltImg" />
+      </div>
+      <div class="card-content">
+        <h5 class="card-title" [ngStyle]="{ color: getcolor }">
+          {{ titreArticle | uppercase }}
+        </h5>
+        <span *ngIf="dispo == false">-disponible</span>
+        <h6 class="card-title">{{ prixArticle }} €</h6>
+
+        <label for="youssef"> Description</label>
+        <input type="text" id="youssef" autofocus placeholder="Description" />
+      </div>
+     <a routerLink="/details/{{idArticle}}">Details</a>
+      <div class="card-action">
+        <button
+          class="btn-like"
+          (click)="onLike()"
+          [ngClass]="{
+            show: jaime === true,
+            hidden: jaime === false
+          }"
+        >
+          j aime
+          <i class="btn-onUnlike"></i>
+        </button>
+       
+        <button
+          class="btn-onUnlike"
+          (click)="onLike()"
+          [ngClass]="{
+            show: jaime === false,
+            hidden: jaime === true
+          }"
+        >
+          j'aime plus
+        </button>
+        <!--<p>Nombre de Like:{{totalNBrLikes}}</p>-->
+        <input
+          type="text"
+          placeholder="Ecrir ton commentaire"
+          [(ngModel)]="comment"
+        />
+        <p>COMMENTAIRE:{{ comment }}</p>
+      </div>
+    </div>
+  </div>
+</div>

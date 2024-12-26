@@ -1,0 +1,24 @@
+<header>
+    <div>La Bonne Affaire</div>
+    <nav>
+      <router-outlet></router-outlet>
+      <ul id="youssef">
+        <li><a routerLink="">home</a></li>
+        <li><a routerLink="ajouter">Ajouter</a></li>
+        <li><a routerLink="/">Liste</a></li>
+        <li><a routerLink="contact">contact</a></li>
+           </ul>
+               </nav>
+            </header>
+  <div id="second">
+    <p>Vous êtes connecté {{ seconde }} 
+      
+    </p>
+  </div>
+  <router-outlet></router-outlet>
+
+  
+  
+  <footer>
+    Copyright © La Bonne Affaire
+  </footer>

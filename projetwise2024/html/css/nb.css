@@ -1,0 +1,21 @@
+/* -------- debut de la Zone reserver pour les imports-------   */
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* -----  fin de la Zone reserver pour les imports-------   */
+
+
+ /* ---- la zone reserver pour les variables qu on vqs utiliser preceder de -- pour eviter la confusion avec les element en css-------   */
+ :root{
+    --black: #333333;
+    --red: #C1272D;
+    --shaded-red: #DF9595;
+    --green: #00751F;
+    --white: #FFFFFF;
+    --twhite: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+  }
+  /* ---- la zone reserver pour les variables qu on vqs utiliser preceder de -- pour eviter la confusion avec les element en css-------   */
+
+
+
+ /* -- Espaces pour les attributs -------   */

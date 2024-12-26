@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>le monde noir &amp; blanc</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/nb.css">
+        <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/menu.js"></script>
+       
+    </head>
+    <body>
+<header id="mainheader"> 
+    <img src="images/layout/nb_logo.svg" alt="le logo de l entreprise">
+    <nav id="mainnav">
+        <h1 class="accessibility">Menu Principale</h1>
+        <ul>
+            <li><a href="index.html">accueill</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="singleBoy.html">Blog</a></li>
+            
+
+        </ul>
+    </nav>
+    <button id="menuToggle"><img src="/images/layout/hamburger.svg" alt="ouvrir/fermer le menuToggle"></button><!--pour permettre a se que la page soit responsible-->
+</header><!--ici se termine le ,mainheader-->
+
+<main id="pagecontent">
+    
+    <h2>>Contactez-Nous</h2>
+    <p>Merci de completer le formulaire suivant pour nous contacter .Tous les champs de ce formulaire sont requis </p>
+    <form id="frmContact" action="merci.html">
+    <div>
+        <div>
+            <label for="fName">Prénom</label>
+ <input type="texte" name="fName" id="fName"  placeholder="saisez votre prenom" required>
+        </div>
+        <div>
+            <label for="lName">Nom de famille</label>
+            <input type="text" name="lName" id="lName" placeholder="Nom de famille" required>
+        </div>
+        <div>
+            <label for="email"> <email>Votre mail</email></label>
+            <input type="email" name="email" id="email"  placeholder="votre adress mail ">
+        </div>
+       
+        <div>
+
+            <label for="Message">Votre Message</label>
+            <textarea name="Message" id="Message"  placeholder="Message"></textarea>
+        </div>
+    </div>
+    <button type="submit">Envoyer</button>
+   
+   <!--<input type="submit" value="Envoyer">pour les ancienne version ce qui es plus recommandes c est le type bouton-->  
+</form>
+  
+   
+
+</main><!--ici se termine le ain containe-->
+
+<footer id="mainfooter">
+    <p>&copy; Copyright youssefsoudre 2024</p>
+</footer><!--ici se termine le mainfooter-->
+</body>
+</html>
